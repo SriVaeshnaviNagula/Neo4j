@@ -1,0 +1,14 @@
+create (Bob:User {id : 1,name:'Bob'})
+create (Peter:User {id : 2,name:'Peter'})
+create (Ana:User {id : 3,name:'Ana'})
+create (Camila:User {id : 4,name:'Camila'})
+create (Roger:User {id : 5,name:'Roger'})
+create (Priya:User {id : 6,name:'Priya'})
+create (Rob:User {id : 7,name:'Rob'})
+create (Richard:User {id : 8,name:'Richard'})
+create (Amy:User {id : 9,name:'Amy'})
+create (Bob)-[:knows]->(Priya),(Bob)-[:knows]->(Richard),
+(Bob)-[:knows]->(Rob), 
+(Priya)-[:knows]->(Peter),
+(Peter)-[:knows]->(Amy),
+(Priya)-[:knows]->(Roger)-[:knows]->(Ana)
